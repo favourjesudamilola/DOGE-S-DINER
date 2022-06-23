@@ -1,0 +1,34 @@
+header {
+    background: white;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+a {
+    color: black;
+}
+a:hover {
+    background: white;
+    color: rgb(50, 18, 18);
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+a.logo {
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+nav ul li a {
+    padding: 1em;
+    display: inline-block;
+}

@@ -1,0 +1,19 @@
+ul {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+li a {
+    font-size: 20rem;
+    width: 20rem;
+    border: 1px solid wheat;
+    border-radius: 3px;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #000000;
+}
