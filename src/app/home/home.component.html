@@ -1,4 +1,4 @@
-
+<app-banner></app-banner>
 <ul>
     <li *ngFor="let food of foods">
         <a>
@@ -8,6 +8,22 @@
                     <h6 style=font-size:0.7rem;>{{food.name}}</h6>
                 </div>
                 <!-- <div> ❤ </div> -->
+                <!-- <div style="text-align:center"></div> -->
+                    <!-- <h1>
+                      ng-starrating demo
+                    </h1> -->
+                <div class="stars">
+                    <star-rating 
+                        [value]="5"
+                        [totalstars]="5" 
+                        checkedcolor="red" 
+                        uncheckedcolor="black" 
+                        size="18px" 
+                        [readonly]="false">
+                    </star-rating>
+                </div>
+        
+                  
             </div>
         </a>
     </li>
