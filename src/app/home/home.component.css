@@ -1,19 +1,101 @@
 ul {
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    padding: 50px;
     display: flex;
     justify-content: center;
+    /* justify-content: space-between 10px; */
     align-items: center;
     flex-wrap: wrap;
     list-style-type: none;
 }
-li a {
-    font-size: 20rem;
-    width: 20rem;
+ul li a {
+    /* font-size: 20rem; */
+    width: 15rem;
     border: 1px solid wheat;
-    border-radius: 3px;
+    bottom: 15px;
+    border-radius: 35px 35px 10px 10px;
     margin: 0.5rem;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    color: #000000;
+    /* color: #ff0000; */
 }
+
+.message{
+    font-family: Italianno;
+    height: 65vh;
+    text-align: center;
+    /* font-weight: 400; */
+    background-color: whitesmoke;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 101px;
+    color: rgb(247, 191, 100);
+    padding-top: 100px;
+}
+
+h2{
+    color: 1px black;
+    font-weight: 100;
+}
+
+hr{
+    background-color: beige;
+}
+
+li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.content{
+    padding: 1.5rem;
+    position: relative;
+}
+.name{
+    /* padding: 10px; */
+    /* top: 5rem; */
+    color: black;
+}
+
+.favourite{
+    /* padding: 10px; */
+    position: absolute;
+    top: .9rem;
+    right: 2rem;
+    color: red;
+}
+.favourite.not{
+    color: grey;
+}
+
+.stars{
+    /* padding: 10px; */
+    color: goldenrod;
+    /* margin-bottom: .2rem; */
+}
+
+
+.product-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cook-time{
+    font-size: .9rem;
+}
+
+.origins{
+    font-size: .7rem;
+    font-weight: 150;
+}
+ /* .cook-time{
+    padding: 10px;
+} */
+
+.price{
+    color: #414141;
+} 
