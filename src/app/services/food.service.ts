@@ -8,6 +8,10 @@ export class FoodService {
 
   constructor() { }
 
+  getFoodById(id: number): Food{
+    return this.getAll().find(food => food.id == id)!;
+  }
+
   getAll():Food[]{
     return [
       {
@@ -84,8 +88,8 @@ export class FoodService {
 
 
 
-      
-      
-      
-      
-      
+
+
+
+
+

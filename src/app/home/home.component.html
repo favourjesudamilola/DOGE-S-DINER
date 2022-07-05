@@ -12,29 +12,29 @@
 </div>
 <hr>
 <div>
-    
+
 </div>
 <div class="cards">
 
     <ul>
         <li *ngFor="let food of foods">
-            <a>
+            <a routerLink="/food/{{food.id}}">
                 <img src="{{food.imageUrl}}" alt="" style="height: 15rem;">
-    
+
                 <div class="content">
                     <div class="name">
                         <h6 style=font-size:0.7rem;>{{food.name}}</h6>
                     </div>
-    
+
                     <span class="favourite {{food.favorite?'':'not'}}">❤</span>
-    
+
                     <div class="stars" >
                         <star-rating
                             [value]="food.stars"
-                            [totalstars]="5" 
-                            checkedcolor="goldenrod" 
-                            uncheckedcolor="black" 
-                            size="18px" 
+                            [totalstars]="5"
+                            checkedcolor="goldenrod"
+                            uncheckedcolor="black"
+                            size="18px"
                             [readonly]="true">
                         </star-rating>
                     </div>
@@ -50,17 +50,17 @@
                             {{food.cookTime}}
                         </div>
                     </div>
-    
+
                     <div class="price">
                         {{food.price |currency}}
                     </div>
-                      
+
                 </div>
-    
+
             </a>
         </li>
     </ul>
-    
+
 
 
 </div>
