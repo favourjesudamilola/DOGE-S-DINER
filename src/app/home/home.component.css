@@ -24,22 +24,28 @@ ul li a {
 
 .message{
     font-family: Italianno;
-    height: 65vh;
-    text-align: center;
-    /* font-weight: 400; */
-    background-color: whitesmoke;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url("/assets/slide2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
-    font-weight: 400;
-    font-size: 101px;
-    color: rgb(247, 191, 100);
-    padding-top: 100px;
+    font-weight: 250;
+    font-size: 150px;
+    color: whitesmoke;
 }
-
-h2{
-    color: 1px black;
-    font-weight: 100;
+hr{
+    color: white;
+}
+h3{
+    color: whitesmoke;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 hr{

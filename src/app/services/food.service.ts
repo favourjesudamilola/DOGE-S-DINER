@@ -1,12 +1,34 @@
+import { TagCloseToken } from '@angular/compiler/src/ml_parser/tokens';
 import { Injectable } from '@angular/core';
+// import { count } from 'console';
 import { Food } from '../shared/model/Food';
+import { Tag } from '../shared/model/Tag';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FoodService {
 
+
   constructor() { }
+
+  getAllTag():Tag[]{
+    return[
+      {name: 'All', count: 6},
+      {name: 'Fries', count: 1},
+      {name: 'Cakes', count: 2},
+      {name: 'Chicken', count: 2},
+      {name: 'Pasta', count: 1},
+    ];
+  }
+
+  //returns food based on tag selected
+  //if tag is all returns all foods in the food service else get foodtag selected with getAll
+  getAllFoodByTag(tag: string): Food[]{
+    return tag == 'All' ?
+    this.getAll() :
+    this.getAll().filter(food => food.tags?.includes(tag));
+  }
 
   getFoodById(id: number): Food{
     return this.getAll().find(food => food.id == id)!;

@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { FoodService } from '../services/food.service';
 import { Food } from '../shared/model/Food';
 import { ActivatedRoute } from '@angular/router';
+// import { SearchFilterPipe } from '../search-filter.pipe';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -10,6 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  searchTerm:string = "";
   foods:Food[] = [];
   constructor(private foodService:FoodService, private route:ActivatedRoute) { }
 

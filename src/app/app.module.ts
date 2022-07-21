@@ -11,6 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { FoodPageComponent } from './food-page/food-page.component';
+import { SearchrouteComponent } from './searchroute/searchroute.component';
+import { SearchFilterPipe } from './search-filter.pipe';
+import { TagsComponent } from './tags/tags.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { FoodPageComponent } from './food-page/food-page.component';
     BannerComponent,
     FooterComponent,
     SearchComponent,
-    FoodPageComponent
+    FoodPageComponent,
+    SearchrouteComponent,
+    SearchFilterPipe,
+    TagsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,23 +1,25 @@
-<!-- <app-search></app-search> -->
 <app-header></app-header>
-<app-banner></app-banner>
 <!-- use page breaker like hr or an empty div with only style margin bottom -->
 <div class="message">
-    <h1>
-        EL.paso
-    </h1>
-    <h3>
-        A STEP AWAY FROM HUNGER
-    </h3>
+    <div class="text">
+        <h1>
+            EL.paso
+        </h1>
+        <hr>
+        <h3>
+            A STEP AWAY FROM HUNGER
+        </h3>
+    </div>
 </div>
-<hr>
+<app-search></app-search>
+<!-- <hr> -->
 <div>
 
 </div>
 <div class="cards">
 
     <ul>
-        <li *ngFor="let food of foods">
+        <li *ngFor="let food of foods |searchFilter: searchTerm">
             <a routerLink="/food/{{food.id}}">
                 <img src="{{food.imageUrl}}" alt="" style="height: 15rem;">
 
@@ -60,7 +62,4 @@
             </a>
         </li>
     </ul>
-
-
-
 </div>

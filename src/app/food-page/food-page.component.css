@@ -1,5 +1,6 @@
 .container{
   display: flex;
+  padding-top: 35px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -15,7 +16,7 @@ img{
   border-radius: 3rem;
   flex: 1 0;
   object-fit: cover;
-  height: 35rem;
+  height: 25rem;
   margin: 1rem;
 }
 
