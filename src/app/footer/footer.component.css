@@ -1,0 +1,85 @@
+/* *{
+    margin-bottom: 30px;
+    padding: 0;
+} */
+/* got this fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+.footer{
+    background: #24262b;
+    padding: 70px 70px;
+}
+.container{
+    max-width: 1170px;
+    /* background-color: red; */
+    margin: auto;
+    background-size: cover;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 10px;
+}
+.footer-col h3{
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+ol{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* .newsletter{
+    color: white;
+    padding-left: 80%;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+} */
+/* won't pick follow us */
+.footer-col ol li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ol li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+.footer-col ol a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(255,255,255, 0.2);
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+.footer-col .social a:hover{
+    background-color: #ffffff;
+    color: #24262b;
+    padding-left: 6px;
+    
+}

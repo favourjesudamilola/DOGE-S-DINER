@@ -2,7 +2,7 @@ import { getLocaleCurrencyCode } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FoodService } from '../services/food.service';
 import { Food } from '../shared/model/Food';
-
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,11 +11,21 @@ import { Food } from '../shared/model/Food';
 export class HomeComponent implements OnInit {
 
   foods:Food[] = [];
-  constructor(private foodService:FoodService) { }
+  constructor(private foodService:FoodService, private route:ActivatedRoute) { }
 
-  //to change the food:from string we import from dhared model
+  //to change the food:from string we import from shared model
   ngOnInit(): void {
-    this.foods = this.foodService.getAll()
+    console.log("THIS IS HOME")
+
+    //anytime the searched parameter changes a new parameter is 
+    this.route.params.subscribe(params => {
+      if(params['searchTerm'])
+      this.foods = this.foodService.getAll().filter(food => 
+        food.name.toLowerCase().includes(params['searchTerm'].toLowerCase()));
+        else
+          this.foods = this.foodService.getAll()
+    })
+    
   }
 
 }

@@ -1,9 +1,15 @@
 header {
-    background: white;
+    background-color: white;
     padding: 0;
     border-bottom: 1px solid black;
 }
+
+.search {
+    display: flex;
+    justify-content: space-between;
+}
 .sticky {
+    z-index: 100;
     position: fixed;
     top: 0;
     width: 100%;
@@ -21,7 +27,7 @@ a:hover {
     justify-content: space-between;
 }
 a.logo {
-    padding: 1em;
+    padding: 1em 1em 0;
 }
 
 nav ul {

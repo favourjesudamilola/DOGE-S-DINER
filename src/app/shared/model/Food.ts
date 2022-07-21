@@ -8,8 +8,8 @@ export class Food{
     favorite: boolean =false;
     stars:number = 0;
     imageUrl!:string;
-    //origins!:string[];
-    //cookTime!:string;
+    origins!:string[];
+    cookTime!:string;
 
     //constructor(id: number){
       //  this.id = id;
