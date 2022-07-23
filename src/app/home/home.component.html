@@ -1,0 +1,65 @@
+<app-header></app-header>
+<!-- use page breaker like hr or an empty div with only style margin bottom -->
+<div class="message">
+    <div class="text">
+        <h1>
+            EL.paso
+        </h1>
+        <hr>
+        <h3>
+            A STEP AWAY FROM HUNGER
+        </h3>
+    </div>
+</div>
+<app-search></app-search>
+<!-- <hr> -->
+<div>
+
+</div>
+<div class="cards">
+
+    <ul>
+        <li *ngFor="let food of foods |searchFilter: searchTerm">
+            <a routerLink="/food/{{food.id}}">
+                <img src="{{food.imageUrl}}" alt="" style="height: 15rem;">
+
+                <div class="content">
+                    <div class="name">
+                        <h6 style=font-size:0.7rem;>{{food.name}}</h6>
+                    </div>
+
+                    <span class="favourite {{food.favorite?'':'not'}}">❤</span>
+
+                    <div class="stars" >
+                        <star-rating
+                            [value]="food.stars"
+                            [totalstars]="5"
+                            checkedcolor="goldenrod"
+                            uncheckedcolor="black"
+                            size="18px"
+                            [readonly]="true">
+                        </star-rating>
+                    </div>
+                    <div class="product-item-footer">
+                        <div class="origins">
+                            <span *ngFor="let origin of food.origins">
+                                {{origin}}
+                            </span>
+                        </div>
+                        <div class="cook-time">
+                            <!-- usinig win + . (clock) -->
+                            <span>🕐</span>
+                            {{food.cookTime}}
+                        </div>
+                    </div>
+
+                    <div class="price">
+                        {{food.price |currency}}
+                    </div>
+
+                </div>
+
+            </a>
+        </li>
+    </ul>
+</div>

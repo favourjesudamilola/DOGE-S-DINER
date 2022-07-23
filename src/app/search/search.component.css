@@ -1,0 +1,43 @@
+div{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+div input{
+    border-radius: 15px 0 0 15px;
+    border: none;
+    height: 3rem;
+    width: 20rem;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+}
+
+div button{
+    color: grey;
+    height: 3rem;
+    width: 5rem;
+    font-size: 1rem;
+    border-radius: 0 15px 15px 0;
+    outline: none;
+    border: none;
+    background-color: rgb(132, 81, 81);
+    color: white;
+    font-weight: 100;
+    opacity: .6;
+}
+
+div button:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+
+
+/* .search{
+    padding-top: 100px;
+} */

@@ -1,0 +1,15 @@
+.container {
+    margin-top: 60px;
+    padding: 50px;
+    height: 80vh;
+    /* background-image: url("/assets/slide2.jpg"); */
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    margin-bottom: 10vh;
+}
+
+h1 {
+    text-align: center;
+}
+
