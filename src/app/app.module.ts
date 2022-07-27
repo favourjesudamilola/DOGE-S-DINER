@@ -11,9 +11,11 @@ import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { FoodPageComponent } from './food-page/food-page.component';
-import { SearchrouteComponent } from './searchroute/searchroute.component';
 import { SearchFilterPipe } from './search-filter.pipe';
 import { TagsComponent } from './tags/tags.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,11 @@ import { TagsComponent } from './tags/tags.component';
     FooterComponent,
     SearchComponent,
     FoodPageComponent,
-    SearchrouteComponent,
     SearchFilterPipe,
-    TagsComponent
+    TagsComponent,
+    LoginComponent,
+    SignupComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
