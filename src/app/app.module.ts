@@ -14,6 +14,7 @@ import { FoodPageComponent } from './food-page/food-page.component';
 import { SearchrouteComponent } from './searchroute/searchroute.component';
 import { SearchFilterPipe } from './search-filter.pipe';
 import { TagsComponent } from './tags/tags.component';
+import { HistoryComponent } from './history/history.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TagsComponent } from './tags/tags.component';
     FoodPageComponent,
     SearchrouteComponent,
     SearchFilterPipe,
-    TagsComponent
+    TagsComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,
