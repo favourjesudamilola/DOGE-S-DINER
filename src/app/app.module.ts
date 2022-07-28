@@ -35,7 +35,7 @@ import { HistoryComponent } from './history/history.component';
     AppRoutingModule,
     RatingModule,
     FormsModule
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
