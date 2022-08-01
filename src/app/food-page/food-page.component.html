@@ -1,4 +1,4 @@
-<app-header></app-header>
+
 <div class="container">
   <img [src]="food.imageUrl" [alt]="food.name" />
 
@@ -40,10 +40,11 @@
     </div>
 
     <div class="price">
-      <span>₦{{food.price}}</span>
+      <span>{{food.price|currency}}</span>
     </div>
 
     <button routerLink="/cart" (click)="addItem()">Add To Cart</button>
 
   </div>
 </div>
+<app-footer></app-footer>

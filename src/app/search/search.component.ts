@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-
 //activated routes reads from the route while router is useful for writing into the route
 @Component({
   selector: 'app-search',

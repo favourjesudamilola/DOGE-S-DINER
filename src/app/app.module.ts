@@ -41,7 +41,6 @@ import { SignupComponent } from './signup/signup.component';
     AppRoutingModule,
     RatingModule,
     FormsModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]

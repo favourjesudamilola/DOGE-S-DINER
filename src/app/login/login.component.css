@@ -73,12 +73,17 @@ a{
   margin-left: 80px;
   width: 50%;
   border-radius: 10px;
-  border: 0;
+  border: 1px solid rgb(132, 81, 81);;
+  background: white;
+  cursor: pointer;
+  transition: all 0.4s;
 }
 
 .log-form button:hover{
+  background-color:  rgb(132, 81, 81);
+  color: white;
+  transform: scale(1.1);
   cursor: pointer;
-  opacity: .5;
 }
 
 .sign{
