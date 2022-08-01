@@ -32,7 +32,6 @@ export class FoodPageComponent implements OnInit {
   }
 
   addItem(){
-    console.log(this.food);
     this.foodItems.push(this.food)
     this.foodItems = JSON.stringify(this.foodItems)
     localStorage.setItem('items', this.foodItems)
