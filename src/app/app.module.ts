@@ -15,6 +15,9 @@ import { SearchrouteComponent } from './searchroute/searchroute.component';
 import { SearchFilterPipe } from './search-filter.pipe';
 import { TagsComponent } from './tags/tags.component';
 import { HistoryComponent } from './history/history.component';
+import { CartComponent } from './cart/cart.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { HistoryComponent } from './history/history.component';
     SearchrouteComponent,
     SearchFilterPipe,
     TagsComponent,
-    HistoryComponent
+    HistoryComponent,
+    CartComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
