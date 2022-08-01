@@ -30,7 +30,7 @@ body{
 .row{
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
 ol{
@@ -52,9 +52,9 @@ div input{
 }
 
 div button{
-    height: 30px; 
+    height: 30px;
     border: none;
-    width: 15%;   
+    width: 15%;
 }
 
 div button:hover{
@@ -94,5 +94,5 @@ div button:hover{
     background-color: #ffffff;
     color: #24262b;
     padding-left: 6px;
-    
+
 }

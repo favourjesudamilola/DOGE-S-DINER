@@ -4,7 +4,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 3rem;
+  margin: 0rem 3rem 3rem 3rem;
+  padding-top: 6rem;
 }
 
 .container > *{
@@ -16,6 +17,7 @@ img{
   border-radius: 3rem;
   flex: 1 0;
   object-fit: cover;
+  width: 100%;
   height: 25rem;
   margin: 1rem;
 }
@@ -88,7 +90,7 @@ img{
 .details button{
   margin-top: 3rem;
   color: white;
-  background: #e72929;
+  background: rgb(132, 81, 81);
   border: none;
   font-size: 1.2rem;
   padding: 1rem;

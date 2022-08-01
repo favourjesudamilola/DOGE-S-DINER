@@ -103,6 +103,28 @@ export class FoodService {
         imageUrl: '/assets/foodimg/frenchfries2.jpg',
         tags: ['FastFood'],
       },
+      {
+        id: 7,
+        name: 'Fries',
+        cookTime: '10-20',
+        price:300,
+        favorite: true,
+        origins: ['Cali', 'us'],
+        stars:3.5,
+        imageUrl: '/assets/foodimg/frenchfries2.jpg',
+        tags: ['FastFood'],
+      },
+      {
+        id: 8,
+        name: 'Fries',
+        cookTime: '10-20',
+        price:300,
+        favorite: true,
+        origins: ['Cali', 'us'],
+        stars:3.5,
+        imageUrl: '/assets/foodimg/frenchfries2.jpg',
+        tags: ['FastFood'],
+      },
     ]
 
   }

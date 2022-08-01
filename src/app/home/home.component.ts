@@ -18,15 +18,15 @@ export class HomeComponent implements OnInit {
 
   //to change the food:from string we import from shared model
   ngOnInit(): void {
-    //anytime the searched parameter changes a new parameter is 
+    //anytime the searched parameter changes a new parameter is
     this.route.params.subscribe(params => {
       if(params['searchTerm'])
-      this.foods = this.foodService.getAll().filter(food => 
+      this.foods = this.foodService.getAll().filter(food =>
         food.name.toLowerCase().includes(params['searchTerm'].toLowerCase()));
         else
           this.foods = this.foodService.getAll()
     })
-    
+
   }
 
 }

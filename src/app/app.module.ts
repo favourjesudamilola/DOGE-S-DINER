@@ -11,11 +11,13 @@ import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { FoodPageComponent } from './food-page/food-page.component';
+import { SearchrouteComponent } from './searchroute/searchroute.component';
 import { SearchFilterPipe } from './search-filter.pipe';
 import { TagsComponent } from './tags/tags.component';
+import { HistoryComponent } from './history/history.component';
+import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -26,18 +28,19 @@ import { CartComponent } from './cart/cart.component';
     FooterComponent,
     SearchComponent,
     FoodPageComponent,
+    SearchrouteComponent,
     SearchFilterPipe,
     TagsComponent,
+    HistoryComponent,
+    CartComponent,
     LoginComponent,
-    SignupComponent,
-    CartComponent
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RatingModule,
     FormsModule
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
