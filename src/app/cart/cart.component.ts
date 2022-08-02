@@ -1,4 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CartService } from '../services/cart/cart.service';
+import { Cart } from '../shared/model/Cart';
+import { CartItem } from '../shared/model/CartItem';
+
 
 @Component({
   selector: 'app-cart',
@@ -6,59 +10,27 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-
-  foodItems: any
-  total:number = 0;
-  constructor() { }
-
+  cart!:Cart;
+  constructor( private cartService: CartService ) {
+    this.setCart();
+  }
   ngOnInit(): void {
-    this.foodItems = localStorage.getItem('items');
-
-    this.foodItems = JSON.parse(this.foodItems);
-    console.log(this.foodItems);
-
-    if(this.foodItems) this.getTotal(this.foodItems);
-
-  }
-
-  onDelete(i:number){
-    this.foodItems.splice(i, 1);
-    localStorage.setItem("items", JSON.stringify(this.foodItems));
-
-    this.getTotal(this.foodItems);
-  }
-
-  validateInput(event:any, i:number){
-    const qty = +event.target.validateInput;
-    if(qty < 1) {
-      event.target.value = this.foodItems[1].qty
-      return;
-    }
-
-    this.QtyUpdated(qty, i)
-
   }
 
 
-  private QtyUpdated(qty:number, i:number){
-    this.foodItems[i].qty = qty;
-
-    localStorage.setItem("items", JSON.stringify(this.foodItems));
-
-    this.getTotal(this.foodItems);
+  setCart(){
+    this.cart = this.cartService.getCart();
   }
 
+  removeFromCart(cartItem:CartItem){
+    this.cartService.removeFromCart(cartItem.food.id);
+    this.setCart();
+  }
 
-
-
-
-  getTotal(data:any){
-    let subs = 0;
-
-    for (const item of data)
-      subs += item.price * item.qty;
-
-      this.total = subs;
+  changeQuantity(cartItem:CartItem, quantityInString:string){
+    const quantity = parseInt(quantityInString);
+    this.cartService.changeQuantity(cartItem.food.id, quantity);
+    this.setCart();
   }
 
 

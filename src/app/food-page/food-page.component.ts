@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { CartService } from '../services/cart/cart.service';
 import { FoodService } from '../services/food.service';
 import { Food } from '../shared/model/Food';
 
@@ -10,32 +11,20 @@ import { Food } from '../shared/model/Food';
 })
 export class FoodPageComponent implements OnInit {
 
-  foodItems: any = localStorage.getItem('items')
   food!: Food;
-  constructor(private activatedRoute:ActivatedRoute, private foodService: FoodService) {
+  constructor(private activatedRoute:ActivatedRoute, private foodService: FoodService, private cartService: CartService, private router: Router) {
     activatedRoute.params.subscribe((params) => {
       if(params['id'])
         this.food = foodService.getFoodById(params['id']);
-
     })
   }
 
   ngOnInit(): void {
-      localStorage.setItem('items', this.foodItems)
-    //   if (localStorage.getItem('items') === null) {
-    //   localStorage.setItem('items', this.foodItems)
-    // };
-    // this.foodItems = localStorage.getItem('items');
-    this.foodItems = JSON.parse(this.foodItems)
-    console.log(this.foodItems);
-
   }
 
-  addItem(){
-
-    this.foodItems.push(this.food)
-    this.foodItems = JSON.stringify(this.foodItems)
-    localStorage.setItem('items', this.foodItems)
+  addToCart(){
+    this.cartService.addToCart(this.food);
+    this.router.navigateByUrl('/cart');
   }
 
 }

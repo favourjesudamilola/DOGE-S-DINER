@@ -8,11 +8,12 @@ h3{
 
 .container{
   display: flex;
-  margin: 1.5rem;
+  /* margin: 1.5rem; */
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  margin-top: 0rem;
 }
 
 ul{

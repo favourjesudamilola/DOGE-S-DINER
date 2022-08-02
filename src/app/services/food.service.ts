@@ -115,7 +115,7 @@ export class FoodService {
         tags: ['FastFood'],
       },
       {
-        id: 8,
+        id: 8 ,
         name: 'Fries',
         cookTime: '10-20',
         price:300,
