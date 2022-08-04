@@ -1,4 +1,9 @@
-<div>
+<div class="top">
+  <button class="home">Continnue Shoppig</button>
+  <h1 class="title">Your Shopping cart</h1>
+  <button class="checkOut">Check out</button>
+</div>
+<div class="container">
   <ul>
     <li *ngFor="let cartItem of cart.items">
 
@@ -27,7 +32,8 @@
       </div>
 
       <div>
-        <button class="remove-button" (click)="removeFromCart(cartItem)">Remove</button>
+        <!-- <button class="remove-button" (click)="removeFromCart(cartItem)">Remove</button> -->
+        <i class="bi bi-trash-fill text-danger" aria-hidden="true" (click)="removeFromCart(cartItem)"></i>
       </div>
 
     </li>
@@ -35,6 +41,7 @@
 
   <div class="checkout">
     <div>
+      <p class="summary">Shopping Summary</p>
       <div class="food-count">{{cart.items.length}}</div>
       <div class="total-price">{{cart.totalPrice}}</div>
 
