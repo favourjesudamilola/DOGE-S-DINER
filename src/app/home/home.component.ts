@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
 
   searchTerm:string = "";
   foods:Food[] = [];
+  isAuthenticated:string = 'false';
   constructor(private foodService:FoodService, private route:ActivatedRoute) { }
 
   //to change the food:from string we import from shared model
@@ -26,7 +27,7 @@ export class HomeComponent implements OnInit {
         else
           this.foods = this.foodService.getAll()
     })
-
+    localStorage.setItem('isAuthenticated', this.isAuthenticated)
   }
 
 }

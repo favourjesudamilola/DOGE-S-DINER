@@ -10,9 +10,14 @@
             <!-- center -->
         </div>
         <div class="right">
-            <a routerLink="/login">
+            <a *ngIf="isAuthenticated === 'false'" routerLink="/login">
               <div class="menuItem">
                 <button class="button">LOGIN</button>
+              </div>
+            </a>
+            <a *ngIf="isAuthenticated === 'true'" routerLink="/">
+              <div class="menuItem">
+                <button class="button">LOGOUT</button>
               </div>
             </a>
             <div class="menuItem">

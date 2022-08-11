@@ -7,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isAuthenticated:string = 'false';
+
   constructor() { }
 
   ngOnInit(): void {
+    this.handleAuthentication();
+    console.log('i was called', this.isAuthenticated)
   }
 
   onClick() {}
+  handleAuthentication(){
+    this.isAuthenticated = localStorage.getItem('isAuthenticated') || 'false';
+  }
 }

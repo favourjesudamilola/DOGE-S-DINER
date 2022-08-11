@@ -2,15 +2,15 @@
   <div class="logs">
       <div class="log-form">
           <h2>Enter Login</h2>
-          <form method="post">
+          <form>
               <div class="Register">
                   <input type="email" placeholder="Email or username" required><br><br>
                   <input type="password" placeholder="Password" required>
               </div>
               <div class="forgot"><a routerLink=""><em>Forgot Password?</em></a></div>
-              <a routerLink="/cart">
-              <button type="submit">login
-              </button>
+              <a routerLink="/cart" (click)="handleLogin()">
+                <button type="submit">login
+                </button>
               </a>
               <div class="sign">
                   No account? <a routerLink="/signup"><em>Signup</em></a>

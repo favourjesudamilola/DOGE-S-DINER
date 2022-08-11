@@ -11,10 +11,11 @@
 
 .Details{
   background-color: white;
+  border: 1px solid gray;
   border-radius: 5px;
   /* background-color: rgb(87, 87, 95); */
-  width: 35%;
-  height: 70vh;
+  width: 30%;
+  height: 60vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -54,7 +55,8 @@ div .fname{
   width: 40%;
   padding: 10px 8px;
   justify-content: space-between;
-  border-radius: 10px;
+  border: 0;
+  /* border-radius: 10px; */
   outline: none;
   /* border: 30; */
 }
@@ -62,7 +64,9 @@ div .fname{
 .names .Input{
   width: 70%;
   padding: 10px 8px;
-  border-radius: 10px;
+  border: 0;
+  border-bottom: 1px solid black;
+  /* border-radius: 10px; */
   outline: none;
   margin-left: 15%;
   margin-top: 15px;
@@ -71,6 +75,8 @@ div .fname{
 button{
   background-color: rgb(97, 71, 71);
   width: 30%;
+  color: white;
+  border: 0;
   padding: 10px 8px;
   border-radius: 10px;
   outline: none;
@@ -85,7 +91,7 @@ button a{
 
 button:hover{
   /* background-color: bisque; */
-  color: 5px solid black;
+  /* color: 5px solid black; */
   opacity: .8;
   cursor: pointer;
   outline: none;
