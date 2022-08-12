@@ -96,3 +96,7 @@ div button:hover{
     padding-left: 6px;
 
 }
+hr{
+  margin-bottom: 25px;
+  background-color: #24262b;
+}
