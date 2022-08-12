@@ -34,5 +34,16 @@ export class CartComponent implements OnInit {
     this.setCart();
   }
 
+  noDisplay = "none";
+
+  openPayment(){
+    this.noDisplay = "flex"
+  }
+  closePayment(){
+    this.noDisplay = "none"
+  }
+
+
+
 
 }

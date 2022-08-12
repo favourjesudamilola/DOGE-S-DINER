@@ -1,7 +1,7 @@
 <div class="top">
   <button class="home">Continnue Shoppig</button>
   <h1 class="title">Your Shopping cart</h1>
-  <button class="checkOut">Check out</button>
+  <button (click)="openPayment()" class="checkOut">Check out</button>
 </div>
 <div class="container">
   <ul>
@@ -48,4 +48,27 @@
     </div>
   </div>
 
+</div>
+
+<div class="payment" [style.display]="noDisplay">
+  <h1 class="payTitle">Personal Information</h1>
+  <label>Name and Surname</label>
+  <input type="text" placeholder="Mattew Ross" class="payInput">
+  <label>Phone Number</label>
+  <input type="text" placeholder="+123 437 93393" class="payInput">
+  <label>Address</label>
+  <input type="text" placeholder="Winter Fell H street 12" class="payInput">
+  <h1 class="payTitle">Card Information</h1>
+  <div class="cardIcons">
+    <img src="/assets/visa.png" width="40" alt="" class="cardIcon">
+    <img src="/assets/master.png" width="40" alt="" class="cardIcon">
+  </div>
+  <input type="password" class="payInput" placeholder="Card Number">
+  <div class="cardInfo">
+    <input type="text" placeholder="mm" class="payInput sm">
+    <input type="text" placeholder="yyyy" class="payInput sm">
+    <input type="text" placeholder="cvv" class="payInput sm">
+  </div>
+  <button class="checkoutButton">Checkout</button>
+  <span (click)="closePayment()" class="close">X</span>
 </div>

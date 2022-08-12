@@ -136,3 +136,82 @@ ul li a{
   content: 'Price: ';
   color: gray;
 }
+
+.payment{
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 20px 1px rgba(0,0,0,0.44);
+-webkit-box-shadow: 10px 10px 20px 1px rgba(0,0,0,0.44);
+-moz-box-shadow: 10px 10px 20px 1px rgba(0,0,0,0.44);
+}
+.payTitle{
+  font-size: 20px;
+  color: gray;
+}
+label{
+  font-size: 20px;
+  font-weight: 300;
+
+}
+.payInput{
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+.payInput::placeholder{
+  color: rgb(100, 143, 121);
+}
+.cardIcons{
+  display: flex;
+}
+.cardIcon{
+  margin-right: 10px;
+}
+.cardInfo{
+  display: flex;
+  justify-content: space-between;
+}
+.sm{
+  width: 30%;
+}
+.checkoutButton{
+  position:absolute;
+  height: 40px;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  box-shadow: 10px 10px 20px 1px rgba(0,0,0,0.44);
+  -webkit-box-shadow: 10px 10px 20px 1px rgba(0,0,0,0.44);
+  -moz-box-shadow: 10px 10px 20px 1px rgba(0,0,0,0.44);
+  background-color: #369e62;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.close{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2px;
+}
+
