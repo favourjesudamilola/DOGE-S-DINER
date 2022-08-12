@@ -34,6 +34,7 @@
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
+  position: relative;
 }
 .img{
   width:50%;
@@ -51,6 +52,19 @@
   background-color:  rgb(132, 81, 81);
   color: white;
   transform: scale(1.1);
+}
+.circle{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 

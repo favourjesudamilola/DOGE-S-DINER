@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../services/cart/cart.service';
+import { Cart } from '../shared/model/Cart';
+import { CartItem } from '../shared/model/CartItem';
 
 @Component({
   selector: 'app-header',
@@ -6,11 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  cart!:Cart;
 
-  constructor() { }
+  constructor( private cartService: CartService ) {
+    this.setCart();
+  }
 
   ngOnInit(): void {
   }
 
-  onClick() {}
+  setCart(){
+    this.cart = this.cartService.getCart();
+  }
+
+
 }

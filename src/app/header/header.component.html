@@ -18,6 +18,9 @@
             <div class="menuItem">
               <a routerLink="/cart">
                 <img src="/assets/icon-cart.svg" alt="">
+                <div class="circle" *ngFor="let cartItems of cart.items">
+                    {{cart.items.length}}
+                </div>
               </a>
             </div>
         </div>
