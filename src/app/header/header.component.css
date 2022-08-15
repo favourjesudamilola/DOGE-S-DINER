@@ -1,6 +1,8 @@
 .container{
   height: 60px;
   position: fixed;
+  top: 0;
+  overflow: hidden;
   width: 100%;
   background-color: white;
   border-bottom: 1px solid  rgb(132, 81, 81);

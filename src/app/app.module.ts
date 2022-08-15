@@ -18,6 +18,9 @@ import { HistoryComponent } from './history/history.component';
 import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { AboutComponent } from './about/about.component';
+import { FoooterComponent } from './foooter/foooter.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { SignupComponent } from './signup/signup.component';
     HistoryComponent,
     CartComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    NotFoundComponent,
+    AboutComponent,
+    FoooterComponent
   ],
   imports: [
     BrowserModule,

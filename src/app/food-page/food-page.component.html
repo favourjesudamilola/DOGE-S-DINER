@@ -40,10 +40,10 @@
     </div>
 
     <div class="price">
-      <span>{{food.price|currency}}</span>
+      <span>₦ {{food.price}}</span>
     </div>
 
-    <button routerLink="/cart" (click)="addItem()">Add To Cart</button>
+    <button (click)="addToCart()" >Add To Cart</button>
 
   </div>
 

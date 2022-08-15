@@ -19,7 +19,7 @@
 <div class="cards">
 
     <ul>
-        <li *ngFor="let food of foods |searchFilter: searchTerm">
+        <li *ngFor="let food of foods">
             <a routerLink="/food/{{food.id}}">
                 <img src="{{food.imageUrl}}" alt="" style="height: 15rem;">
 

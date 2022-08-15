@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.handleAuthentication();
-    console.log('i was called', this.isAuthenticated)
+    // console.log('i was called', this.isAuthenticated)
   }
 
   onClick() {}
