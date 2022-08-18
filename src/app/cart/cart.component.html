@@ -7,6 +7,7 @@
 </div>
 <div class="container">
   <ul>
+
     <li *ngFor="let cartItem of cart.items">
 
       <div>
@@ -71,6 +72,8 @@
     <input type="text" placeholder="yyyy" class="payInput sm">
     <input type="text" placeholder="cvv" class="payInput sm">
   </div>
-  <button class="checkoutButton">Checkout</button>
+  <a routerLink="/progress">
+    <button class="checkoutButton">Checkout</button>
+  </a>
   <span (click)="closePayment()" class="close">X</span>
 </div>
