@@ -10,6 +10,11 @@
             <!-- center -->
         </div>
         <div class="right">
+          <a routerLink="/about">
+            <div class="menuItem">
+              <button class="button">ABOUT</button>
+            </div>
+          </a>
             <a *ngIf="isAuthenticated === 'false'" routerLink="/login">
               <div class="menuItem">
                 <button class="button">LOGIN</button>

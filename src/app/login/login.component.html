@@ -2,14 +2,17 @@
   <div class="logs">
       <div class="log-form">
           <h2>Enter Login</h2>
-          <form>
+          <form [formGroup]="login">
               <div class="Register">
-                  <input type="email" placeholder="Email or username"><br><br>
-                  <input type="password" placeholder="Password">
+                  <input formControlName="email" type="email" placeholder="Email or username">
+                  <span class="text-danger" *ngIf="login.controls['email'] && login.hasError('required', 'email')">*Email id is required</span>
+                  <input formControlName="password" type="password" placeholder="Password">
+                  <span class="text-danger" *ngIf="login.controls['password'] && login.hasError('required', 'password')">*password id is required</span>
+                  <!-- add error message using ngIf -->
               </div>
               <div class="forgot"><a routerLink=""><em>Forgot Password?</em></a></div>
               <a routerLink="/cart" (click)="handleLogin()">
-                <button type="submit">login
+                <button type="submit" [disabled]="login.invalid" class="submit">login
                 </button>
               </a>
               <div class="sign">

@@ -25,6 +25,7 @@ const routes: Routes = [
   {path: 'login', component:LoginComponent},
   {path: 'signup', component:SignupComponent},
   {path: 'about', component: AboutComponent},
+  // angular wildcard route
   {path: '**', component: NotFoundComponent,},
 ];
 

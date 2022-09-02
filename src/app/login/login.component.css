@@ -35,6 +35,12 @@
   position: absolute;
 }
 
+.text-danger{
+  color: red;
+  font-size: small;
+  margin-left: 25px;
+}
+
 a{
   color: black;
 }
@@ -77,6 +83,11 @@ a{
   background: white;
   cursor: pointer;
   transition: all 0.4s;
+}
+
+.submit:disabled{
+  background-color: grey;
+  cursor: not-allowed;
 }
 
 .log-form button:hover{

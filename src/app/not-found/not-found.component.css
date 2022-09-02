@@ -1,14 +1,24 @@
-p{
-    text-align: center;
-    font-weight: light;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 250px;
+body{
+    background-image: url("/assets/error404bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .exclam{
     font-weight: 500;
+    font-size: 5rem;
+    color: red;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.notfound{
+    text-align: center;
 }
 
 button{
+    margin-top: 20px;
     margin-left: 45%;
 }

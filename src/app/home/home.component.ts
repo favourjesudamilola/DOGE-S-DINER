@@ -11,7 +11,6 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
   searchTerm:string = "";
   foods:Food[] = [];
   isAuthenticated:string = 'false';
