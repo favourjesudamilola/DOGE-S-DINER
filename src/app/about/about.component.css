@@ -1,4 +1,4 @@
-.container{
+.container-fluid{
   height: 60px;
   position: fixed;
   top: 0;
@@ -187,7 +187,7 @@ h5{
 .circle{
   border-radius: 50%;
   position: absolute;
-  border: 1px solid red;
+  border: 1px solid black;
   background-image: url("/assets/customers/oladosu.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -221,14 +221,21 @@ h5{
 
 .text{
   text-align: center;
+  margin-top: 20px;
+  color: green;
 }
 
 .line{
   width: 90px;
+  margin-top: 25px;
+}
+
+h6{
+  color: green;
 }
 
 i{
-  z-index: 1;
+  /* z-index: 1; */
   left: 500px;
   bottom: 50px;
   

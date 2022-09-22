@@ -19,6 +19,8 @@ ul li a {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    text-decoration: none;
+    color: black;
     /* color: #ff0000; */
 }
 
@@ -92,6 +94,7 @@ li a:hover{
 }
 .cook-time{
     font-size: .9rem;
+    text-decoration: none;
 }
 
 .origins{
