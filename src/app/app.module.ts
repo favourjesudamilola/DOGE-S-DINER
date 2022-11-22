@@ -14,7 +14,6 @@ import { FormsModule } from '@angular/forms';
 import { FoodPageComponent } from './food-page/food-page.component';
 import { SearchrouteComponent } from './searchroute/searchroute.component';
 import { SearchFilterPipe } from './search-filter.pipe';
-import { TagsComponent } from './tags/tags.component';
 import { HistoryComponent } from './history/history.component';
 import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
@@ -34,7 +33,6 @@ import { FoooterComponent } from './foooter/foooter.component';
     FoodPageComponent,
     SearchrouteComponent,
     SearchFilterPipe,
-    TagsComponent,
     HistoryComponent,
     CartComponent,
     LoginComponent,
