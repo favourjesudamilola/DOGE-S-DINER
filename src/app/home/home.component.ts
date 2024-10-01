@@ -12,8 +12,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   searchTerm:string = "";
-  //foods:Food[] = [];
-  foods: any[] = [];
+  foods:Food[] = [];
+  // foods: any[] = [];
   isAuthenticated:string = 'false';
   constructor(private foodService:FoodService, private route:ActivatedRoute) { }
 
