@@ -11,6 +11,12 @@ import { Food } from '../shared/model/Food';
 })
 export class FoodPageComponent implements OnInit {
 
+  ratingValue!: number;
+
+  onRatingChanged(event: any) {
+    this.ratingValue = event.rating;
+  }
+
   food!: Food;
   constructor(private activatedRoute:ActivatedRoute, private foodService: FoodService, private cartService: CartService, private router: Router) {
     activatedRoute.params.subscribe((params) => {

@@ -11,6 +11,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
+  ratingValue!: number;
+
+  onRatingChanged(event: any) {
+    this.ratingValue = event.rating;
+  }
+
   searchTerm:string = "";
   foods:Food[] = [];
   // foods: any[] = [];
