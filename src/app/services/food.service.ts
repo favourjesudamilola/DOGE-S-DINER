@@ -1,17 +1,25 @@
-import { TagCloseToken } from '@angular/compiler/src/ml_parser/tokens';
 import { Injectable } from '@angular/core';
-// import { count } from 'console';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { Food } from '../shared/model/Food';
 import { Tag } from '../shared/model/Tag';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class FoodService {
 
+  //private url: string = 'https://66cf3101901aab2484214a81.mockapi.io/api/v1/food';
 
-  constructor() { }
 
+  constructor(private http: HttpClient) { }
+
+  //getFoodApi(): Observable<any[]> {
+    //return this.http.get<any[]>(this.url);
+  //}
+  
+ 
   getAllTag():Tag[]{
     return[
       {name: 'All', count: 6},

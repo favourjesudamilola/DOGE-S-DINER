@@ -12,19 +12,29 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   searchTerm:string = "";
-  foods:Food[] = [];
+  //foods:Food[] = [];
+  foods: any[] = [];
   isAuthenticated:string = 'false';
   constructor(private foodService:FoodService, private route:ActivatedRoute) { }
 
+
+  getFood(): void {
+   //this.foodService.getFoodApi().subscribe(food => this.foods = food);
+  }
+  
+
   //to change the food:from string we import from shared model
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getFood();
+
+    console.log(this.foods);
     //anytime the searched parameter changes a new parameter is
     this.route.params.subscribe(params => {
-      if(params['searchTerm'])
-      this.foods = this.foodService.getAll().filter(food =>
-        food.name.toLowerCase().includes(params['searchTerm'].toLowerCase()));
-        else
-          this.foods = this.foodService.getAll()
+    if(params['searchTerm'])
+    this.foods = this.foodService.getAll().filter(food =>
+    food.name.toLowerCase().includes(params['searchTerm'].toLowerCase()));
+    else
+    this.foods = this.foodService.getAll()
     })
     localStorage.setItem('isAuthenticated', this.isAuthenticated)
   }
